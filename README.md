@@ -116,7 +116,7 @@ For an unseen dataset with the Normalized test mean was 0.57, the models had the
 
 These root-mean-squared-error values are a very strong metric of model performance, but it is also useful to visualize the model predictions against actual data. 
 
-<img src="images/predicted_vs_true.png" width= "600" height= "400" /> 
+<img src="images/Predicted_vs_true.png" width= "800" height= "600" /> 
 
 In the above chart, the true change in HIV infection rate is the X-coordinate for each point and the predicted change in HIV infection rate is the y-coordinate. Perfect prediction performance would be indicated by a diagonal line between the two axes with a slope of 1. Clearly, each model does not yield perfect performance, but the aggreage performance is strong. Interestingly, each model yields similar predictions with a similar distribution. 
 
@@ -128,14 +128,14 @@ Aside from the Population feature, other features show even distribution that su
 
 While further refinement of model performance could be performed and may improve results, these results were deemed sufficient for this purpose, and would allow comparison of different features selected in the models as a means to understand factors that influent the rate of HIV infection. Visualizing predictions of the model and true data for each feature used for modeling indicate that the models tend to predict values closer to the mean and less extreme than true values, as can be observed with the tigher distribution of predicted target values (Y-predicted) relative to the true values (Y-test).
 
-<img src="images/feature_true_vs_pred.png" width= '1000' height= '600' />
+<img src="images/feature_true_vs_pred.png" width= '800' height= '600' />
 
 ## Evaluate feature selection and importance <a name= "importance"></a>
 
 However, given the overall performance of these models, the predictions seem strong enough to allow for comparison of the underlying causes of increased HIV infection, which can be investigated by examing the features and relative impact of those features on each model.  Models used betwen 7 - 9 features and only 14 total features are used by all three models. As shown in the following figure, many features are shared between models and when features differ the features are often representing similar information. Values above zero indicate that an increase in that feature will increase the rate of HIV infection, and values below zero indicate than an increase in that feature will decrease HIV infection rates.
 
 <p>
-<img src="images/impact_of_features.png" width= '800' height= '400' />
+<img src="images/Impact_of_features.png" width= '800' height= '400' />
 </p>
 
 Interestingly, all of these features were in the EDA process to select appropriate features.  The following features are predicted to increase the rate of HIV infection across all models:
