@@ -134,6 +134,7 @@ While further refinement of model performance could be performed and may improve
 
 However, given the overall performance of these models, the predictions seem strong enough to allow for comparison of the underlying causes of increased HIV infection, which can be investigated by examing the features and relative impact of those features on each model.  Models used betwen 7 - 9 features and only 14 total features are used by all three models. As shown in the following figure, many features are shared between models and when features differ the features are often representing similar information. Values above zero indicate that an increase in that feature will increase the rate of HIV infection, and values below zero indicate than an increase in that feature will decrease HIV infection rates.
 
+![Feature Importance](images/impact_of_features.png)
 
 <img src="images/impact_of_features.png" width= '800' height= '400' />
 
