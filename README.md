@@ -122,20 +122,20 @@ In the above chart, the true change in HIV infection rate is the X-coordinate fo
 
 Evaluation of residuals, error between the true value and a predicted value, can be used to determine if model predictions are accurate across a range of values for features. Shown below are the residuals for EDA-selected features model. The bottom right panel shows the residuals for the target of prediction and all other panels show the residuals for each feature. 
 
-<img src="images/residuals_of_<statsmodels.regression.linear_model.RegressionResultsWrapper object at 0x1c23bd7208>.png" width= '1200' height= '600' />
+<img src="images/residuals_of_<statsmodels.regression.linear_model.RegressionResultsWrapper object at 0x1c23bd7208>.png" width= '1000' height= '600' />
 
 Aside from the Population feature, other features show even distribution that suggests the error is evenly distributed across features and between features. And the prediction of the change in HIV infection rate ('predicted rel HIV infection rate') show uniform distribution of error, which is desired. Interestingly, the error for Population is non-uniform and indicates that the model performance could be improved by altering how this feature is employed in the model. 
 
 While further refinement of model performance could be performed and may improve results, these results were deemed sufficient for this purpose, and would allow comparison of different features selected in the models as a means to understand factors that influent the rate of HIV infection. Visualizing predictions of the model and true data for each feature used for modeling indicate that the models tend to predict values closer to the mean and less extreme than true values, as can be observed with the tigher distribution of predicted target values (Y-predicted) relative to the true values (Y-test).
 
-<img src="images/feature_true_vs_pred.png" width= '1200' height= '600' />
+<img src="images/feature_true_vs_pred.png" width= '1000' height= '600' />
 
 ## Evaluate feature selection and importance <a name= "importance"></a>
 
 However, given the overall performance of these models, the predictions seem strong enough to allow for comparison of the underlying causes of increased HIV infection, which can be investigated by examing the features and relative impact of those features on each model.  Models used betwen 7 - 9 features and only 14 total features are used by all three models. As shown in the following figure, many features are shared between models and when features differ the features are often representing similar information. Values above zero indicate that an increase in that feature will increase the rate of HIV infection, and values below zero indicate than an increase in that feature will decrease HIV infection rates.
 
 
-<img src="images/impact_of_features.png" width= '1200' height= '600' />
+<img src="images/impact_of_features.png" width= '1000' height= '600' />
 
 Interestingly, all of these features were in the EDA process to select appropriate features.  The following features are predicted to increase the rate of HIV infection across all models:
 * **poverty_rate**: Percent of the population below the US poverty level.
