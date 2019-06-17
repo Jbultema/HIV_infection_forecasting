@@ -116,7 +116,7 @@ For an unseen dataset with the Normalized test mean was 0.57, the models had the
 
 These root-mean-squared-error values are a very strong metric of model performance, but it is also useful to visualize the model predictions against actual data. 
 
-<img src="images/Predicted_vs_true.png" width= "800" height= "300" /> 
+<img src="images/Predicted_vs_true.png" width= "800" height= "250" /> 
 
 In the above chart, the true change in HIV infection rate is the X-coordinate for each point and the predicted change in HIV infection rate is the y-coordinate. Perfect prediction performance would be indicated by a diagonal line between the two axes with a slope of 1. Clearly, each model does not yield perfect performance, but the aggreage performance is strong. Interestingly, each model yields similar predictions with a similar distribution. 
 
