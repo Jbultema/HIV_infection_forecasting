@@ -116,19 +116,19 @@ For an unseen dataset with the Normalized test mean was 0.57, the models had the
 
 These root-mean-squared-error values are a very strong metric of model performance, but it is also useful to visualize the model predictions against actual data. 
 
-<img src="images/Predicted_vs_true.png" width= "800" height= "600" /> 
+<img src="images/Predicted_vs_true.png" width= "800" height= "400" /> 
 
 In the above chart, the true change in HIV infection rate is the X-coordinate for each point and the predicted change in HIV infection rate is the y-coordinate. Perfect prediction performance would be indicated by a diagonal line between the two axes with a slope of 1. Clearly, each model does not yield perfect performance, but the aggreage performance is strong. Interestingly, each model yields similar predictions with a similar distribution. 
 
 Evaluation of residuals, error between the true value and a predicted value, can be used to determine if model predictions are accurate across a range of values for features. Shown below are the residuals for EDA-selected features model. The bottom right panel shows the residuals for the target of prediction and all other panels show the residuals for each feature. 
 
-<img src="images/residuals_of_<statsmodels.regression.linear_model.RegressionResultsWrapper object at 0x1c23bd7208>.png" width= '1000' height= '600' />
+<img src="images/residuals_of_<statsmodels.regression.linear_model.RegressionResultsWrapper object at 0x1c23bd7208>.png" width= '1000' height= '400' />
 
 Aside from the Population feature, other features show even distribution that suggests the error is evenly distributed across features and between features. And the prediction of the change in HIV infection rate ('predicted rel HIV infection rate') show uniform distribution of error, which is desired. Interestingly, the error for Population is non-uniform and indicates that the model performance could be improved by altering how this feature is employed in the model. 
 
 While further refinement of model performance could be performed and may improve results, these results were deemed sufficient for this purpose, and would allow comparison of different features selected in the models as a means to understand factors that influent the rate of HIV infection. Visualizing predictions of the model and true data for each feature used for modeling indicate that the models tend to predict values closer to the mean and less extreme than true values, as can be observed with the tigher distribution of predicted target values (Y-predicted) relative to the true values (Y-test).
 
-<img src="images/feature_true_vs_pred.png" width= '800' height= '600' />
+<img src="images/feature_true_vs_pred.png" width= '800' height= '400' />
 
 ## Evaluate feature selection and importance <a name= "importance"></a>
 
